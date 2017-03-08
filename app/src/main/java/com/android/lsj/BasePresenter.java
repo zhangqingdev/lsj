@@ -5,13 +5,11 @@ package com.android.lsj;
  */
 
 public abstract class BasePresenter<T> {
- public T mView;
-
-    public void attach(T mView){
-        this.mView=mView;
+    public T mView;
+    public void attach(T mView) {
+        this.mView = mView;
     }
-
-    public void dettach(){
-        mView=null;
+    public void dettach() {
+        mView = null;
     }
 }

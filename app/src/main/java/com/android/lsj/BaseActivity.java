@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by dianjoy on 2017/3/7.
  */
 
-public abstract class BaseActivity<V,T extends  BasePresenter<V>> extends AppCompatActivity {
+public abstract class BaseActivity<V, T extends BasePresenter<V>> extends AppCompatActivity {
 
     public T presenter;
 
@@ -20,7 +20,7 @@ public abstract class BaseActivity<V,T extends  BasePresenter<V>> extends AppCom
     @Override
     protected void onResume() {
         super.onResume();
-        presenter.attach((V)this);
+        presenter.attach((V) this);
     }
 
     @Override
